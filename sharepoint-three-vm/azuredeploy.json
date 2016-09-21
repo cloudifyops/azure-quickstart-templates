@@ -75,28 +75,28 @@
       "metadata": {
         "description": "The size of the AD VM Created"
       },
-      "defaultValue": "Standard_DS2"
+      "defaultValue": "Standard_D3"
     },
     "sqlVMSize": {
       "type": "string",
       "metadata": {
         "description": "The size of the SQL VM Created"
       },
-      "defaultValue": "Standard_DS2"
+      "defaultValue": "Standard_D3"
     },
     "spVMSize": {
       "type": "string",
       "metadata": {
         "description": "The size of the VM Created"
       },
-      "defaultValue": "Standard_DS3"
+      "defaultValue": "Standard_D3"
     },
     "domainName": {
       "type": "string",
       "metadata": {
         "description": "The FQDN of the AD Domain created "
       },
-      "defaultValue": "contoso.local"
+      "defaultValue": "td-eboard.com"
     },
     "sqlServerServiceAccountUserName": {
       "type": "string",
@@ -249,13 +249,13 @@
     "sqlBEAddressPoolID": "[concat(variables('sqllbID'),'/backendAddressPools/',variables('LBBE'))]",
     "spIPConfigID": "[concat(variables('spNicId'),'/ipConfigurations/ipconfig1')]",
     "adDataDisk": "ADDataDisk",
-    "adDataDiskSize": 1000,
+    "adDataDiskSize": 20,
     "sqlDataDisk": "SQLDataDisk",
-    "sqlDataDiskSize": 1000,
+    "sqlDataDiskSize": 100,
     "sqlLogDisk": "SQLLogDisk",
-    "sqlLogDiskSize": 1000,
+    "sqlLogDiskSize": 100,
     "spDataDisk": "SPDataDisk",
-    "spDataDiskSize": 1000,
+    "spDataDiskSize": 50,
     "adpublicIPAddressName": "adpublicIP",
     "sqlpublicIPAddressName": "sqlpublicIP",
     "spCentralAdminPort": 8080,
